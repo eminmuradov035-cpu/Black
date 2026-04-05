@@ -96,6 +96,8 @@ export const CartProvider = ({ children }) => {
   );
 };
 
+/** Colocated hook for this provider; Vite refresh expects components-only default export pattern. */
+// eslint-disable-next-line react-refresh/only-export-components -- useCart is tied to CartProvider
 export const useCart = () => {
   const ctx = useContext(CartContext);
   if (!ctx) {

@@ -1,9 +1,14 @@
-import { Routes, Route } from "react-router-dom";
+import { Routes, Route, useParams } from "react-router-dom";
 import { CartProvider } from "./context/CartContext";
 import Layout from "./components/Layout";
-import Homepage from "./pages/Homepage";
+import Homepage from "./pages/HomePage";
 import ProductDetails from "./pages/ProductDetails";
 import CartPage from "./pages/CartPage";
+
+function ProductDetailsRoute() {
+  const { id } = useParams();
+  return <ProductDetails key={id} />;
+}
 
 const App = () => {
   return (
@@ -11,7 +16,7 @@ const App = () => {
       <Routes>
         <Route element={<Layout />}>
           <Route path="/" element={<Homepage />} />
-          <Route path="/product/:id" element={<ProductDetails />} />
+          <Route path="/product/:id" element={<ProductDetailsRoute />} />
           <Route path="/cart" element={<CartPage />} />
         </Route>
       </Routes>
