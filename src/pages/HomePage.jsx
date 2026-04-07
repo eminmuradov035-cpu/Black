@@ -1,4 +1,5 @@
 import { useEffect, useState } from "react";
+import axios from "axios";
 import ProductCard from "../components/ProductCard";
 import { IconSearch } from "../components/Icons";
 
@@ -23,15 +24,13 @@ const Homepage = () => {
       setLoading(true);
       setError(null);
       try {
-        const res = await fetch(
-          `https://dummyjson.com/products?limit=${PAGE_SIZE}&skip=0`
-        );
-        const data = await res.json();
+        const { data } = await axios.get("https://dummyjson.com/products", {
+          params: { limit: PAGE_SIZE, skip: 0 },
+        });
         if (cancelled) return;
-        if (!res.ok) throw new Error(data?.message || "Request failed");
-        setProducts(data.products ?? []);
-        setTotal(data.total ?? 0);
-        setSkip(data.products?.length ?? 0);
+        setProducts(data?.products ?? []);
+        setTotal(data?.total ?? 0);
+        setSkip(data?.products?.length ?? 0);
       } catch {
         if (!cancelled) {
           setError("Failed to load products");
@@ -53,12 +52,10 @@ const Homepage = () => {
     setLoadingMore(true);
     setError(null);
     try {
-      const res = await fetch(
-        `https://dummyjson.com/products?limit=${PAGE_SIZE}&skip=${skip}`
-      );
-      const data = await res.json();
-      if (!res.ok) throw new Error(data?.message || "Request failed");
-      const next = data.products ?? [];
+      const { data } = await axios.get("https://dummyjson.com/products", {
+        params: { limit: PAGE_SIZE, skip },
+      });
+      const next = data?.products ?? [];
       setProducts((prev) => [...prev, ...next]);
       setSkip((s) => s + next.length);
     } catch {

@@ -1,5 +1,6 @@
 import { Link, NavLink, Outlet } from "react-router-dom";
 import { useCart } from "../context/CartContext";
+import { useAuth } from "../context/AuthContext";
 import { LogoMark, IconUser, IconBag } from "./Icons";
 
 const navLinkClass = ({ isActive }) =>
@@ -9,6 +10,8 @@ const navLinkClass = ({ isActive }) =>
 
 const Layout = () => {
   const { itemCount } = useCart();
+  const { user, isAuthenticated, isLoading, logout } = useAuth();
+  const displayName = user?.firstName || user?.username || "Account";
 
   return (
     <div className="min-h-screen flex flex-col bg-white text-gray-900">
@@ -57,13 +60,37 @@ const Layout = () => {
           </nav>
 
           <div className="flex items-center justify-end gap-5">
-            <button
-              type="button"
-              className="p-1 text-gray-700 hover:text-gray-900 rounded-full hover:bg-gray-50"
-              aria-label="Account"
-            >
-              <IconUser />
-            </button>
+            {isAuthenticated ? (
+              <div className="flex items-center gap-2">
+                <button
+                  type="button"
+                  className="p-1 text-gray-700 hover:text-gray-900 rounded-full hover:bg-gray-50"
+                  aria-label="Account"
+                  title={displayName}
+                >
+                  <IconUser />
+                </button>
+                <span className="hidden sm:inline text-sm text-gray-600 max-w-[110px] truncate">
+                  {displayName}
+                </span>
+                <button
+                  type="button"
+                  onClick={logout}
+                  className="text-xs px-2 py-1 rounded border border-gray-200 text-gray-600 hover:text-gray-900 hover:border-gray-300"
+                >
+                  Logout
+                </button>
+              </div>
+            ) : (
+              <Link
+                to="/login"
+                className="p-1 text-gray-700 hover:text-gray-900 rounded-full hover:bg-gray-50 no-underline"
+                aria-label={isLoading ? "Loading account" : "Login"}
+                title={isLoading ? "Loading..." : "Login"}
+              >
+                <IconUser />
+              </Link>
+            )}
             <Link
               to="/cart"
               className="relative p-1 text-gray-700 hover:text-gray-900 rounded-full hover:bg-gray-50 no-underline"

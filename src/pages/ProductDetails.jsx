@@ -1,4 +1,5 @@
 import { useEffect, useState } from "react";
+import axios from "axios";
 import { Link, useParams } from "react-router-dom";
 import { useCart } from "../context/CartContext";
 import { IconHeart, IconTruck, IconInfo, StarRow } from "../components/Icons";
@@ -38,14 +39,17 @@ const ProductDetails = () => {
   useEffect(() => {
     let cancelled = false;
     (async () => {
-      const res = await fetch(`https://dummyjson.com/products/${id}`);
-      const data = await res.json();
-      if (cancelled) return;
-      if (!res.ok || !data.id) {
-        setProduct({ notFound: true });
-        return;
+      try {
+        const { data } = await axios.get(`https://dummyjson.com/products/${id}`);
+        if (cancelled) return;
+        if (!data?.id) {
+          setProduct({ notFound: true });
+          return;
+        }
+        setProduct(data);
+      } catch {
+        if (!cancelled) setProduct({ notFound: true });
       }
-      setProduct(data);
     })();
     return () => {
       cancelled = true;
