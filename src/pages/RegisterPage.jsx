@@ -1,8 +1,10 @@
 import { useState } from "react";
 import { Link, useNavigate } from "react-router-dom";
+import { useTranslation } from "react-i18next";
 import { useAuth } from "../context/AuthContext";
 
 const RegisterPage = () => {
+  const { t } = useTranslation();
   const navigate = useNavigate();
   const { register } = useAuth();
 
@@ -27,13 +29,13 @@ const RegisterPage = () => {
     setSuccess("");
     try {
       await register(form);
-      setSuccess("Registration completed. You can now sign in.");
+      setSuccess(t("registerPage.registerSuccess"));
       navigate("/login", {
         replace: true,
         state: { username: form.username, password: form.password },
       });
     } catch {
-      setError("Registration failed. Please try again.");
+      setError(t("registerPage.registerFailed"));
     } finally {
       setLoading(false);
     }
@@ -41,14 +43,14 @@ const RegisterPage = () => {
 
   return (
     <div className="max-w-md mx-auto px-5 py-14">
-      <h1 className="text-3xl font-semibold text-gray-900 mb-2">Register</h1>
-      <p className="text-sm text-gray-500 mb-8">Create your account to start shopping.</p>
+      <h1 className="text-3xl font-semibold text-gray-900 mb-2">{t("registerPage.title")}</h1>
+      <p className="text-sm text-gray-500 mb-8">{t("registerPage.subtitle")}</p>
 
       <form onSubmit={onSubmit} className="space-y-4">
         <div className="grid grid-cols-1 sm:grid-cols-2 gap-3">
           <div>
             <label htmlFor="reg-first-name" className="block text-sm text-gray-700 mb-1">
-              First name
+              {t("registerPage.firstName")}
             </label>
             <input
               id="reg-first-name"
@@ -60,7 +62,7 @@ const RegisterPage = () => {
           </div>
           <div>
             <label htmlFor="reg-last-name" className="block text-sm text-gray-700 mb-1">
-              Last name
+              {t("registerPage.lastName")}
             </label>
             <input
               id="reg-last-name"
@@ -73,7 +75,7 @@ const RegisterPage = () => {
         </div>
         <div>
           <label htmlFor="reg-username" className="block text-sm text-gray-700 mb-1">
-            Username
+            {t("registerPage.username")}
           </label>
           <input
             id="reg-username"
@@ -85,7 +87,7 @@ const RegisterPage = () => {
         </div>
         <div>
           <label htmlFor="reg-password" className="block text-sm text-gray-700 mb-1">
-            Password
+            {t("registerPage.password")}
           </label>
           <input
             id="reg-password"
@@ -113,14 +115,14 @@ const RegisterPage = () => {
           disabled={loading}
           className="w-full h-11 rounded-full bg-black text-white font-semibold disabled:opacity-60"
         >
-          {loading ? "Creating account..." : "Create account"}
+          {loading ? t("registerPage.creatingAccount") : t("registerPage.createAccount")}
         </button>
       </form>
 
       <p className="text-sm text-gray-600 mt-5">
-        Already have an account?{" "}
+        {t("registerPage.alreadyHaveAccount")}{" "}
         <Link to="/login" className="text-gray-900 font-medium">
-          Sign in
+          {t("registerPage.signIn")}
         </Link>
       </p>
     </div>

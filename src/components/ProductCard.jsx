@@ -1,5 +1,6 @@
 import { useState } from "react";
 import { Link } from "react-router-dom";
+import { useTranslation } from "react-i18next";
 import { IconHeart } from "./Icons";
 
 function formatMoney(n) {
@@ -21,6 +22,7 @@ function getPricing(product) {
 }
 
 const ProductCard = ({ product }) => {
+  const { t } = useTranslation();
   const [wish, setWish] = useState(false);
   if (!product?.id) return null;
 
@@ -48,7 +50,7 @@ const ProductCard = ({ product }) => {
           type="button"
           onClick={() => setWish((w) => !w)}
           className="absolute bottom-3 right-3 z-10 w-9 h-9 rounded-full border border-gray-200 bg-white shadow-sm flex items-center justify-center text-gray-600 hover:text-gray-900 hover:border-gray-300 transition-colors"
-          aria-label={wish ? "Remove from wishlist" : "Add to wishlist"}
+          aria-label={wish ? t("productCard.removeFromWishlist") : t("productCard.addToWishlist")}
         >
           <IconHeart className="w-4 h-4" filled={wish} />
         </button>

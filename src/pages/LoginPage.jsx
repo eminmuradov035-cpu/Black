@@ -1,8 +1,10 @@
 import { useState } from "react";
 import { Link, useLocation, useNavigate } from "react-router-dom";
+import { useTranslation } from "react-i18next";
 import { useAuth } from "../context/AuthContext";
 
 const LoginPage = () => {
+  const { t } = useTranslation();
   const navigate = useNavigate();
   const location = useLocation();
   const { login } = useAuth();
@@ -20,7 +22,7 @@ const LoginPage = () => {
       await login({ username, password });
       navigate("/", { replace: true });
     } catch {
-      setError("Login failed. Please check your username and password.");
+      setError(t("loginPage.loginFailed"));
     } finally {
       setLoading(false);
     }
@@ -28,13 +30,13 @@ const LoginPage = () => {
 
   return (
     <div className="max-w-md mx-auto px-5 py-14">
-      <h1 className="text-3xl font-semibold text-gray-900 mb-2">Login</h1>
-      <p className="text-sm text-gray-500 mb-8">Sign in to manage your account and cart.</p>
+      <h1 className="text-3xl font-semibold text-gray-900 mb-2">{t("loginPage.title")}</h1>
+      <p className="text-sm text-gray-500 mb-8">{t("loginPage.subtitle")}</p>
 
       <form onSubmit={onSubmit} className="space-y-4">
         <div>
           <label htmlFor="login-username" className="block text-sm text-gray-700 mb-1">
-            Username
+            {t("loginPage.username")}
           </label>
           <input
             id="login-username"
@@ -46,7 +48,7 @@ const LoginPage = () => {
         </div>
         <div>
           <label htmlFor="login-password" className="block text-sm text-gray-700 mb-1">
-            Password
+            {t("loginPage.password")}
           </label>
           <input
             id="login-password"
@@ -69,14 +71,14 @@ const LoginPage = () => {
           disabled={loading}
           className="w-full h-11 rounded-full bg-black text-white font-semibold disabled:opacity-60"
         >
-          {loading ? "Signing in..." : "Sign in"}
+          {loading ? t("loginPage.signingIn") : t("loginPage.signIn")}
         </button>
       </form>
 
       <p className="text-sm text-gray-600 mt-5">
-        No account yet?{" "}
+        {t("loginPage.noAccount")}{" "}
         <Link to="/register" className="text-gray-900 font-medium">
-          Register
+          {t("loginPage.register")}
         </Link>
       </p>
     </div>

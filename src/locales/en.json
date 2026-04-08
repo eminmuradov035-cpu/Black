@@ -1,0 +1,97 @@
+{
+  "layout": {
+    "home": "Home",
+    "categories": "Categories",
+    "contactUs": "Contact Us",
+    "blog": "Blog",
+    "themeDark": "Dark",
+    "themeLight": "Light",
+    "logout": "Logout",
+    "login": "Login",
+    "loadingAccount": "Loading account",
+    "shoppingCart": "Shopping cart",
+    "language": "Language"
+  },
+  "categories": {
+    "smartphones": "Smartphones",
+    "laptops": "Laptops",
+    "fragrances": "Fragrances",
+    "skincare": "Skincare",
+    "groceries": "Groceries"
+  },
+  "homePage": {
+    "title": "Our Collection Of Products",
+    "searchHelp": "Search products — for display only; does not filter or load products.",
+    "searchPlaceholder": "Search products…",
+    "showingRange": "Showing {{from}}-{{to}} of {{total}} item(s)",
+    "placeholderCopy": "Lorem ipsum dolor sit amet, consectetur adipiscing elit. Cras id mauris in sapien pulvinar viverra. Sed vitae ipsum nec ligula.",
+    "loading": "Loading…",
+    "loadFailed": "Failed to load products",
+    "loadMoreFailed": "Failed to load more",
+    "noProducts": "No products found.",
+    "loadMore": "Load More"
+  },
+  "productDetails": {
+    "productNotFound": "Product not found.",
+    "backToListing": "Back to listing",
+    "loading": "Loading…",
+    "productListing": "Product Listing",
+    "review_one": "review",
+    "review_other": "reviews",
+    "decreaseQuantity": "Decrease quantity",
+    "increaseQuantity": "Increase quantity",
+    "addToCart": "Add to Cart",
+    "buyNow": "Buy Now",
+    "freeShipping": "Free worldwide shipping on all orders over $100",
+    "deliveryInfo": "Delivers in 3–7 working days. Shipping & Returns",
+    "featureFallbackCategory": "Premium build quality",
+    "featureBrandFallback": "Carefully inspected before shipping",
+    "featureReturns": "30-day easy returns on eligible orders",
+    "categoryLabel": "Category: {{value}}",
+    "brandLabel": "Brand: {{value}}",
+    "addToWishlist": "Add to wishlist",
+    "removeFromWishlist": "Remove from wishlist"
+  },
+  "productCard": {
+    "addToWishlist": "Add to wishlist",
+    "removeFromWishlist": "Remove from wishlist"
+  },
+  "cartPage": {
+    "emptyTitle": "Your cart is empty",
+    "emptyDescription": "Add items from the product catalog to see them here.",
+    "browseProducts": "Browse products",
+    "title": "Shopping cart",
+    "eachPrice": "${{price}} each",
+    "decreaseQuantity": "Decrease quantity",
+    "increaseQuantity": "Increase quantity",
+    "remove": "Remove",
+    "continueShopping": "Continue shopping",
+    "subtotal": "Subtotal",
+    "checkout": "Checkout"
+  },
+  "loginPage": {
+    "title": "Login",
+    "subtitle": "Sign in to manage your account and cart.",
+    "username": "Username",
+    "password": "Password",
+    "loginFailed": "Login failed. Please check your username and password.",
+    "signingIn": "Signing in...",
+    "signIn": "Sign in",
+    "noAccount": "No account yet?",
+    "register": "Register"
+  },
+  "registerPage": {
+    "title": "Register",
+    "subtitle": "Create your account to start shopping.",
+    "firstName": "First name",
+    "lastName": "Last name",
+    "username": "Username",
+    "password": "Password",
+    "registerFailed": "Registration failed. Please try again.",
+    "registerSuccess": "Registration completed. You can now sign in.",
+    "creatingAccount": "Creating account...",
+    "createAccount": "Create account",
+    "alreadyHaveAccount": "Already have an account?",
+    "signIn": "Sign in"
+  }
+}

@@ -1,6 +1,8 @@
+import "./locales/i18n";
 import { Routes, Route, useParams } from "react-router-dom";
 import { CartProvider } from "./context/CartContext";
 import { AuthProvider } from "./context/AuthContext";
+import { ThemeProvider } from "./context/ThemeContext";
 import Layout from "./components/Layout";
 import Homepage from "./pages/HomePage";
 import ProductDetails from "./pages/ProductDetails";
@@ -15,19 +17,21 @@ function ProductDetailsRoute() {
 
 const App = () => {
   return (
-    <AuthProvider>
-      <CartProvider>
-        <Routes>
-          <Route element={<Layout />}>
-            <Route path="/" element={<Homepage />} />
-            <Route path="/product/:id" element={<ProductDetailsRoute />} />
-            <Route path="/cart" element={<CartPage />} />
-            <Route path="/login" element={<LoginPage />} />
-            <Route path="/register" element={<RegisterPage />} />
-          </Route>
-        </Routes>
-      </CartProvider>
-    </AuthProvider>
+    <ThemeProvider>
+      <AuthProvider>
+        <CartProvider>
+          <Routes>
+            <Route element={<Layout />}>
+              <Route path="/" element={<Homepage />} />
+              <Route path="/product/:id" element={<ProductDetailsRoute />} />
+              <Route path="/cart" element={<CartPage />} />
+              <Route path="/login" element={<LoginPage />} />
+              <Route path="/register" element={<RegisterPage />} />
+            </Route>
+          </Routes>
+        </CartProvider>
+      </AuthProvider>
+    </ThemeProvider>
   );
 };
 

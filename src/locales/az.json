@@ -1,0 +1,97 @@
+{
+  "layout": {
+    "home": "Ana səhifə",
+    "categories": "Kateqoriyalar",
+    "contactUs": "Əlaqə",
+    "blog": "Bloq",
+    "themeDark": "Tünd",
+    "themeLight": "İşıqlı",
+    "logout": "Çıxış",
+    "login": "Giriş",
+    "loadingAccount": "Hesab yüklənir",
+    "shoppingCart": "Səbət",
+    "language": "Dil"
+  },
+  "categories": {
+    "smartphones": "Smartfonlar",
+    "laptops": "Noutbuklar",
+    "fragrances": "Ətirlər",
+    "skincare": "Dəriyə qulluq",
+    "groceries": "Ərzaq"
+  },
+  "homePage": {
+    "title": "Məhsul Kolleksiyamız",
+    "searchHelp": "Məhsul axtarışı — yalnız göstərmək üçündür; filtrləmə etmir və məhsul yükləmir.",
+    "searchPlaceholder": "Məhsul axtarın…",
+    "showingRange": "{{total}} məhsuldan {{from}}-{{to}} göstərilir",
+    "placeholderCopy": "Lorem ipsum dolor sit amet, consectetur adipiscing elit. Cras id mauris in sapien pulvinar viverra. Sed vitae ipsum nec ligula.",
+    "loading": "Yüklənir…",
+    "loadFailed": "Məhsullar yüklənmədi",
+    "loadMoreFailed": "Daha çox məhsul yüklənmədi",
+    "noProducts": "Məhsul tapılmadı.",
+    "loadMore": "Daha çox"
+  },
+  "productDetails": {
+    "productNotFound": "Məhsul tapılmadı.",
+    "backToListing": "Siyahıya qayıt",
+    "loading": "Yüklənir…",
+    "productListing": "Məhsul Siyahısı",
+    "review_one": "rəy",
+    "review_other": "rəy",
+    "decreaseQuantity": "Sayı azalt",
+    "increaseQuantity": "Sayı artır",
+    "addToCart": "Səbətə əlavə et",
+    "buyNow": "İndi al",
+    "freeShipping": "$100-dan yuxarı bütün sifarişlərdə pulsuz dünya çatdırılması",
+    "deliveryInfo": "3–7 iş günü ərzində çatdırılır. Çatdırılma və qaytarılma",
+    "featureFallbackCategory": "Yüksək keyfiyyətli istehsal",
+    "featureBrandFallback": "Göndərilmədən əvvəl diqqətlə yoxlanılır",
+    "featureReturns": "Uyğun sifarişlər üçün 30 günlük asan qaytarılma",
+    "categoryLabel": "Kateqoriya: {{value}}",
+    "brandLabel": "Brend: {{value}}",
+    "addToWishlist": "Seçilmişlərə əlavə et",
+    "removeFromWishlist": "Seçilmişlərdən sil"
+  },
+  "productCard": {
+    "addToWishlist": "Seçilmişlərə əlavə et",
+    "removeFromWishlist": "Seçilmişlərdən sil"
+  },
+  "cartPage": {
+    "emptyTitle": "Səbətiniz boşdur",
+    "emptyDescription": "Burada görmək üçün məhsul kataloqundan məhsullar əlavə edin.",
+    "browseProducts": "Məhsullara bax",
+    "title": "Səbət",
+    "eachPrice": "Hər biri ${{price}}",
+    "decreaseQuantity": "Sayı azalt",
+    "increaseQuantity": "Sayı artır",
+    "remove": "Sil",
+    "continueShopping": "Alışa davam et",
+    "subtotal": "Aralıq cəm",
+    "checkout": "Ödənişə keç"
+  },
+  "loginPage": {
+    "title": "Giriş",
+    "subtitle": "Hesab və səbətinizi idarə etmək üçün daxil olun.",
+    "username": "İstifadəçi adı",
+    "password": "Şifrə",
+    "loginFailed": "Giriş uğursuz oldu. İstifadəçi adı və şifrəni yoxlayın.",
+    "signingIn": "Daxil olunur...",
+    "signIn": "Daxil ol",
+    "noAccount": "Hesabınız yoxdur?",
+    "register": "Qeydiyyat"
+  },
+  "registerPage": {
+    "title": "Qeydiyyat",
+    "subtitle": "Alış-verişə başlamaq üçün hesab yaradın.",
+    "firstName": "Ad",
+    "lastName": "Soyad",
+    "username": "İstifadəçi adı",
+    "password": "Şifrə",
+    "registerFailed": "Qeydiyyat alınmadı. Yenidən cəhd edin.",
+    "registerSuccess": "Qeydiyyat tamamlandı. İndi daxil ola bilərsiniz.",
+    "creatingAccount": "Hesab yaradılır...",
+    "createAccount": "Hesab yarat",
+    "alreadyHaveAccount": "Artıq hesabınız var?",
+    "signIn": "Daxil ol"
+  }
+}

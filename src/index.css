@@ -1,1 +1,45 @@
 @import "tailwindcss";
+
+@custom-variant dark (&:where(.dark, .dark *));
+
+/* In dark mode, flip strong black/white text utilities. */
+.dark .text-black,
+.dark .text-gray-900 {
+  color: #fff !important;
+}
+
+.dark .text-white {
+  color: #000 !important;
+}
+
+/* In dark mode, flip strong black/white backgrounds (buttons included). */
+.dark .bg-black {
+  background-color: #fff !important;
+}
+
+.dark .bg-white {
+  background-color: #000 !important;
+}
+
+/* Smooth mode transition */
+html,
+body,
+#root,
+button,
+a,
+input,
+textarea,
+select,
+div,
+span,
+p,
+h1,
+h2,
+h3,
+h4,
+h5,
+h6 {
+  transition-property: color, background-color, border-color;
+  transition-duration: 700ms;
+  transition-timing-function: ease-in-out;
+}

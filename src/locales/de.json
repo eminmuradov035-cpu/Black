@@ -1,0 +1,97 @@
+{
+  "layout": {
+    "home": "Startseite",
+    "categories": "Kategorien",
+    "contactUs": "Kontakt",
+    "blog": "Blog",
+    "themeDark": "Dunkel",
+    "themeLight": "Hell",
+    "logout": "Abmelden",
+    "login": "Anmelden",
+    "loadingAccount": "Konto wird geladen",
+    "shoppingCart": "Warenkorb",
+    "language": "Sprache"
+  },
+  "categories": {
+    "smartphones": "Smartphones",
+    "laptops": "Laptops",
+    "fragrances": "Parfums",
+    "skincare": "Hautpflege",
+    "groceries": "Lebensmittel"
+  },
+  "homePage": {
+    "title": "Unsere Produktkollektion",
+    "searchHelp": "Produktsuche — nur zur Anzeige; filtert oder lädt keine Produkte.",
+    "searchPlaceholder": "Produkte suchen…",
+    "showingRange": "{{from}}-{{to}} von {{total}} Artikel(n) angezeigt",
+    "placeholderCopy": "Lorem ipsum dolor sit amet, consectetur adipiscing elit. Cras id mauris in sapien pulvinar viverra. Sed vitae ipsum nec ligula.",
+    "loading": "Wird geladen…",
+    "loadFailed": "Produkte konnten nicht geladen werden",
+    "loadMoreFailed": "Weitere Produkte konnten nicht geladen werden",
+    "noProducts": "Keine Produkte gefunden.",
+    "loadMore": "Mehr laden"
+  },
+  "productDetails": {
+    "productNotFound": "Produkt nicht gefunden.",
+    "backToListing": "Zurück zur Liste",
+    "loading": "Wird geladen…",
+    "productListing": "Produktliste",
+    "review_one": "Bewertung",
+    "review_other": "Bewertungen",
+    "decreaseQuantity": "Menge verringern",
+    "increaseQuantity": "Menge erhöhen",
+    "addToCart": "In den Warenkorb",
+    "buyNow": "Jetzt kaufen",
+    "freeShipping": "Kostenloser weltweiter Versand für alle Bestellungen über 100 $",
+    "deliveryInfo": "Lieferung in 3–7 Werktagen. Versand & Rückgabe",
+    "featureFallbackCategory": "Premium-Verarbeitungsqualität",
+    "featureBrandFallback": "Vor dem Versand sorgfältig geprüft",
+    "featureReturns": "30 Tage einfache Rückgabe für berechtigte Bestellungen",
+    "categoryLabel": "Kategorie: {{value}}",
+    "brandLabel": "Marke: {{value}}",
+    "addToWishlist": "Zur Wunschliste hinzufügen",
+    "removeFromWishlist": "Von der Wunschliste entfernen"
+  },
+  "productCard": {
+    "addToWishlist": "Zur Wunschliste hinzufügen",
+    "removeFromWishlist": "Von der Wunschliste entfernen"
+  },
+  "cartPage": {
+    "emptyTitle": "Dein Warenkorb ist leer",
+    "emptyDescription": "Füge Produkte aus dem Katalog hinzu, um sie hier zu sehen.",
+    "browseProducts": "Produkte ansehen",
+    "title": "Warenkorb",
+    "eachPrice": "${{price}} pro Stück",
+    "decreaseQuantity": "Menge verringern",
+    "increaseQuantity": "Menge erhöhen",
+    "remove": "Entfernen",
+    "continueShopping": "Weiter einkaufen",
+    "subtotal": "Zwischensumme",
+    "checkout": "Zur Kasse"
+  },
+  "loginPage": {
+    "title": "Anmeldung",
+    "subtitle": "Melde dich an, um dein Konto und deinen Warenkorb zu verwalten.",
+    "username": "Benutzername",
+    "password": "Passwort",
+    "loginFailed": "Anmeldung fehlgeschlagen. Bitte Benutzername und Passwort prüfen.",
+    "signingIn": "Anmeldung läuft...",
+    "signIn": "Anmelden",
+    "noAccount": "Noch kein Konto?",
+    "register": "Registrieren"
+  },
+  "registerPage": {
+    "title": "Registrierung",
+    "subtitle": "Erstelle dein Konto, um mit dem Einkaufen zu beginnen.",
+    "firstName": "Vorname",
+    "lastName": "Nachname",
+    "username": "Benutzername",
+    "password": "Passwort",
+    "registerFailed": "Registrierung fehlgeschlagen. Bitte erneut versuchen.",
+    "registerSuccess": "Registrierung abgeschlossen. Du kannst dich jetzt anmelden.",
+    "creatingAccount": "Konto wird erstellt...",
+    "createAccount": "Konto erstellen",
+    "alreadyHaveAccount": "Hast du bereits ein Konto?",
+    "signIn": "Anmelden"
+  }
+}

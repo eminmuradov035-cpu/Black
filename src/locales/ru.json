@@ -1,0 +1,97 @@
+{
+  "layout": {
+    "home": "Главная",
+    "categories": "Категории",
+    "contactUs": "Связаться с нами",
+    "blog": "Блог",
+    "themeDark": "Тёмная",
+    "themeLight": "Светлая",
+    "logout": "Выйти",
+    "login": "Вход",
+    "loadingAccount": "Загрузка аккаунта",
+    "shoppingCart": "Корзина",
+    "language": "Язык"
+  },
+  "categories": {
+    "smartphones": "Смартфоны",
+    "laptops": "Ноутбуки",
+    "fragrances": "Парфюмерия",
+    "skincare": "Уход за кожей",
+    "groceries": "Продукты"
+  },
+  "homePage": {
+    "title": "Наша Коллекция Товаров",
+    "searchHelp": "Поиск товаров — только для отображения; не фильтрует и не загружает товары.",
+    "searchPlaceholder": "Поиск товаров…",
+    "showingRange": "Показано {{from}}-{{to}} из {{total}} шт.",
+    "placeholderCopy": "Lorem ipsum dolor sit amet, consectetur adipiscing elit. Cras id mauris in sapien pulvinar viverra. Sed vitae ipsum nec ligula.",
+    "loading": "Загрузка…",
+    "loadFailed": "Не удалось загрузить товары",
+    "loadMoreFailed": "Не удалось загрузить ещё",
+    "noProducts": "Товары не найдены.",
+    "loadMore": "Загрузить ещё"
+  },
+  "productDetails": {
+    "productNotFound": "Товар не найден.",
+    "backToListing": "Назад к списку",
+    "loading": "Загрузка…",
+    "productListing": "Список Товаров",
+    "review_one": "отзыв",
+    "review_other": "отзыва",
+    "decreaseQuantity": "Уменьшить количество",
+    "increaseQuantity": "Увеличить количество",
+    "addToCart": "В корзину",
+    "buyNow": "Купить сейчас",
+    "freeShipping": "Бесплатная доставка по миру для заказов от $100",
+    "deliveryInfo": "Доставка за 3–7 рабочих дней. Доставка и возврат",
+    "featureFallbackCategory": "Премиальное качество сборки",
+    "featureBrandFallback": "Тщательно проверено перед отправкой",
+    "featureReturns": "Простой возврат в течение 30 дней для подходящих заказов",
+    "categoryLabel": "Категория: {{value}}",
+    "brandLabel": "Бренд: {{value}}",
+    "addToWishlist": "Добавить в избранное",
+    "removeFromWishlist": "Убрать из избранного"
+  },
+  "productCard": {
+    "addToWishlist": "Добавить в избранное",
+    "removeFromWishlist": "Убрать из избранного"
+  },
+  "cartPage": {
+    "emptyTitle": "Ваша корзина пуста",
+    "emptyDescription": "Добавьте товары из каталога, чтобы увидеть их здесь.",
+    "browseProducts": "Перейти к товарам",
+    "title": "Корзина",
+    "eachPrice": "${{price}} за шт.",
+    "decreaseQuantity": "Уменьшить количество",
+    "increaseQuantity": "Увеличить количество",
+    "remove": "Удалить",
+    "continueShopping": "Продолжить покупки",
+    "subtotal": "Промежуточный итог",
+    "checkout": "Оформить заказ"
+  },
+  "loginPage": {
+    "title": "Вход",
+    "subtitle": "Войдите, чтобы управлять аккаунтом и корзиной.",
+    "username": "Имя пользователя",
+    "password": "Пароль",
+    "loginFailed": "Ошибка входа. Проверьте имя пользователя и пароль.",
+    "signingIn": "Вход...",
+    "signIn": "Войти",
+    "noAccount": "Нет аккаунта?",
+    "register": "Регистрация"
+  },
+  "registerPage": {
+    "title": "Регистрация",
+    "subtitle": "Создайте аккаунт, чтобы начать покупки.",
+    "firstName": "Имя",
+    "lastName": "Фамилия",
+    "username": "Имя пользователя",
+    "password": "Пароль",
+    "registerFailed": "Не удалось зарегистрироваться. Попробуйте снова.",
+    "registerSuccess": "Регистрация завершена. Теперь вы можете войти.",
+    "creatingAccount": "Создание аккаунта...",
+    "createAccount": "Создать аккаунт",
+    "alreadyHaveAccount": "Уже есть аккаунт?",
+    "signIn": "Войти"
+  }
+}

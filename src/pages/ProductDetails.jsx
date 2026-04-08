@@ -1,6 +1,7 @@
 import { useEffect, useState } from "react";
 import axios from "axios";
 import { Link, useParams } from "react-router-dom";
+import { useTranslation } from "react-i18next";
 import { useCart } from "../context/CartContext";
 import { IconHeart, IconTruck, IconInfo, StarRow } from "../components/Icons";
 
@@ -16,19 +17,20 @@ function getPricing(product) {
   return { sale, original };
 }
 
-function featureBullets(product) {
+function featureBullets(product, t) {
   const tags = product.tags;
   if (Array.isArray(tags) && tags.length >= 3) return tags.slice(0, 3);
   if (Array.isArray(tags) && tags.length > 0) return tags;
   const cat = product.category ? String(product.category).replace(/-/g, " ") : "";
   return [
-    cat ? `Category: ${cat}` : "Premium build quality",
-    product.brand ? `Brand: ${product.brand}` : "Carefully inspected before shipping",
-    "30-day easy returns on eligible orders",
+    cat ? t("productDetails.categoryLabel", { value: cat }) : t("productDetails.featureFallbackCategory"),
+    product.brand ? t("productDetails.brandLabel", { value: product.brand }) : t("productDetails.featureBrandFallback"),
+    t("productDetails.featureReturns"),
   ];
 }
 
 const ProductDetails = () => {
+  const { t } = useTranslation();
   const { id } = useParams();
   const [product, setProduct] = useState(null);
   const [quantity, setQuantity] = useState(1);
@@ -58,10 +60,10 @@ const ProductDetails = () => {
 
   if (product?.notFound) {
     return (
-      <div className="max-w-[1200px] mx-auto px-5 py-16 text-center text-gray-600">
-        <p className="mb-4">Product not found.</p>
-        <Link to="/" className="text-gray-900 font-medium underline">
-          Back to listing
+      <div className="max-w-[1200px] mx-auto px-5 py-16 text-center text-gray-600 dark:text-gray-300">
+        <p className="mb-4">{t("productDetails.productNotFound")}</p>
+        <Link to="/" className="text-gray-900 dark:text-gray-100 font-medium underline">
+          {t("productDetails.backToListing")}
         </Link>
       </div>
     );
@@ -69,8 +71,8 @@ const ProductDetails = () => {
 
   if (!product?.id) {
     return (
-      <div className="flex justify-center items-center min-h-[40vh] text-gray-500">
-        Loading…
+      <div className="flex justify-center items-center min-h-[40vh] text-gray-500 dark:text-gray-400">
+        {t("productDetails.loading")}
       </div>
     );
   }
@@ -79,21 +81,21 @@ const ProductDetails = () => {
   const thumbs = product.images?.slice(0, 3) ?? [];
   const mainSrc = activeImage ?? product.thumbnail ?? thumbs[0];
   const reviewCount = Array.isArray(product.reviews) ? product.reviews.length : 0;
-  const bullets = featureBullets(product);
+  const bullets = featureBullets(product, t);
 
   return (
     <div className="max-w-[1200px] mx-auto px-5 sm:px-8 py-8 lg:py-12">
-      <nav className="text-sm text-gray-500 mb-8" aria-label="Breadcrumb">
+      <nav className="text-sm text-gray-500 dark:text-gray-400 mb-8" aria-label="Breadcrumb">
         <ol className="flex flex-wrap items-center gap-2">
           <li>
-            <Link to="/" className="hover:text-gray-900 no-underline">
-              Product Listing
+            <Link to="/" className="hover:text-gray-900 dark:hover:text-gray-100 no-underline">
+              {t("productDetails.productListing")}
             </Link>
           </li>
           <li aria-hidden className="text-gray-400">
             &gt;
           </li>
-          <li className="text-gray-900 font-medium truncate max-w-[min(100%,280px)]">
+          <li className="text-gray-900 dark:text-gray-100 font-medium truncate max-w-[min(100%,280px)]">
             {product.title}
           </li>
         </ol>
@@ -134,7 +136,7 @@ const ProductDetails = () => {
               type="button"
               onClick={() => setWish((w) => !w)}
               className="shrink-0 p-2 rounded-full border border-gray-200 text-gray-600 hover:text-gray-900 hover:border-gray-300"
-              aria-label={wish ? "Remove from wishlist" : "Add to wishlist"}
+              aria-label={wish ? t("productDetails.removeFromWishlist") : t("productDetails.addToWishlist")}
             >
               <IconHeart className="w-6 h-6" filled={wish} />
             </button>
@@ -154,7 +156,7 @@ const ProductDetails = () => {
             <div className="flex items-center gap-2 text-sm text-gray-600">
               <StarRow rating={product.rating} />
               <span>
-                ({reviewCount} {reviewCount === 1 ? "review" : "reviews"})
+                ({reviewCount} {t("productDetails.review", { count: reviewCount })})
               </span>
             </div>
           </div>
@@ -175,7 +177,7 @@ const ProductDetails = () => {
                 type="button"
                 className="px-4 py-2.5 text-lg text-gray-700 hover:bg-gray-50"
                 onClick={() => setQuantity((q) => Math.max(1, q - 1))}
-                aria-label="Decrease quantity"
+                aria-label={t("productDetails.decreaseQuantity")}
               >
                 −
               </button>
@@ -186,7 +188,7 @@ const ProductDetails = () => {
                 type="button"
                 className="px-4 py-2.5 text-lg text-gray-700 hover:bg-gray-50"
                 onClick={() => setQuantity((q) => q + 1)}
-                aria-label="Increase quantity"
+                aria-label={t("productDetails.increaseQuantity")}
               >
                 +
               </button>
@@ -196,7 +198,7 @@ const ProductDetails = () => {
               className="px-8 py-2.5 rounded-full bg-gray-900 text-white text-sm font-semibold hover:bg-gray-800 transition-colors"
               onClick={() => addItem(product, quantity)}
             >
-              Add to Cart
+              {t("productDetails.addToCart")}
             </button>
           </div>
 
@@ -204,17 +206,17 @@ const ProductDetails = () => {
             to="/cart"
             className="block w-full text-center py-3 rounded-full border-2 border-gray-900 text-gray-900 text-sm font-semibold no-underline hover:bg-gray-50 transition-colors mb-10"
           >
-            Buy Now
+            {t("productDetails.buyNow")}
           </Link>
 
           <div className="space-y-4 pt-2 border-t border-gray-100">
             <div className="flex gap-3 text-sm text-gray-600 leading-snug">
               <IconTruck className="w-5 h-5 shrink-0 text-gray-900 mt-0.5" />
-              <p>Free worldwide shipping on all orders over $100</p>
+              <p>{t("productDetails.freeShipping")}</p>
             </div>
             <div className="flex gap-3 text-sm text-gray-600 leading-snug">
               <IconInfo className="w-5 h-5 shrink-0 text-gray-900 mt-0.5" />
-              <p>Delivers in 3–7 working days. Shipping &amp; Returns</p>
+              <p>{t("productDetails.deliveryInfo")}</p>
             </div>
           </div>
         </div>
