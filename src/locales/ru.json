@@ -10,7 +10,8 @@
     "login": "Вход",
     "loadingAccount": "Загрузка аккаунта",
     "shoppingCart": "Корзина",
-    "language": "Язык"
+    "language": "Язык",
+    "accountMenu": "Меню аккаунта"
   },
   "categories": {
     "smartphones": "Смартфоны",
@@ -29,7 +30,11 @@
     "loadFailed": "Не удалось загрузить товары",
     "loadMoreFailed": "Не удалось загрузить ещё",
     "noProducts": "Товары не найдены.",
-    "loadMore": "Загрузить ещё"
+    "loadMore": "Загрузить ещё",
+    "heroAlt": "Изображение главной страницы",
+    "heroTitle": "Создаём уют, переосмысливаем пространство — ваш дом, ваш неповторимый стиль.",
+    "heroSubtitle": "Откройте для себя подобранную мебель и декор, которые превращают каждую комнату в спокойное личное пространство. Смотрите коллекцию и находите вещи «как вы».",
+    "heroSearchPlaceholder": "Поиск мебели, комнат и идей…"
   },
   "productDetails": {
     "productNotFound": "Товар не найден.",
@@ -78,7 +83,9 @@
     "signingIn": "Вход...",
     "signIn": "Войти",
     "noAccount": "Нет аккаунта?",
-    "register": "Регистрация"
+    "register": "Создать аккаунт",
+    "forgotPassword": "Забыли пароль?",
+    "imageAlt": "Вдохновение для интерьера"
   },
   "registerPage": {
     "title": "Регистрация",
@@ -92,6 +99,46 @@
     "creatingAccount": "Создание аккаунта...",
     "createAccount": "Создать аккаунт",
     "alreadyHaveAccount": "Уже есть аккаунт?",
-    "signIn": "Войти"
+    "signIn": "Войти",
+    "confirmPassword": "Подтвердите пароль",
+    "termsAgree": "Я прочитал(а) и согласен(на) с Условиями и Политикой конфиденциальности",
+    "passwordMismatch": "Пароли не совпадают",
+    "termsRequired": "Примите условия, чтобы продолжить",
+    "imageAlt": "Регистрация — вдохновение"
+  },
+  "footer": {
+    "partner1": "Партнёр",
+    "partner2": "Партнёр",
+    "partner3": "Партнёр",
+    "partner4": "Партнёр",
+    "newsletterTitle": "Подпишитесь на рассылку, чтобы узнавать о скидках",
+    "emailPlaceholder": "Ваш email",
+    "subscribe": "Подписаться",
+    "colProducts": "Товары",
+    "colCategories": "Категории",
+    "colResources": "Ресурсы",
+    "colCompany": "Компания",
+    "colSupport": "Поддержка",
+    "linkSofas": "Диваны и кресла",
+    "linkTables": "Столы",
+    "linkChairs": "Стулья",
+    "linkBeds": "Кровати",
+    "linkLiving": "Гостиная",
+    "linkBedroom": "Спальня",
+    "linkKitchen": "Кухня",
+    "linkOffice": "Офис",
+    "linkBlog": "Блог",
+    "linkGuides": "Гиды",
+    "linkFaq": "FAQ",
+    "linkCare": "Уход",
+    "linkAbout": "О нас",
+    "linkCareers": "Карьера",
+    "linkPress": "Пресса",
+    "linkContact": "Контакты",
+    "linkShipping": "Доставка",
+    "linkReturns": "Возврат",
+    "linkPrivacy": "Конфиденциальность",
+    "linkTerms": "Условия",
+    "copyright": "© 2026 Black Shop. Все права защищены."
   }
 }

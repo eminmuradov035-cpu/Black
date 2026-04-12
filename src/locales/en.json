@@ -10,7 +10,8 @@
     "login": "Login",
     "loadingAccount": "Loading account",
     "shoppingCart": "Shopping cart",
-    "language": "Language"
+    "language": "Language",
+    "accountMenu": "Account menu"
   },
   "categories": {
     "smartphones": "Smartphones",
@@ -29,7 +30,11 @@
     "loadFailed": "Failed to load products",
     "loadMoreFailed": "Failed to load more",
     "noProducts": "No products found.",
-    "loadMore": "Load More"
+    "loadMore": "Load More",
+    "heroAlt": "Homepage showcase",
+    "heroTitle": "Crafting comfort, redefining spaces — your home, your signature style.",
+    "heroSubtitle": "Discover curated furniture and décor that turns every room into a calm, personal retreat. Browse our collection and find pieces that feel like you.",
+    "heroSearchPlaceholder": "Search furniture, rooms, and ideas…"
   },
   "productDetails": {
     "productNotFound": "Product not found.",
@@ -77,8 +82,10 @@
     "loginFailed": "Login failed. Please check your username and password.",
     "signingIn": "Signing in...",
     "signIn": "Sign in",
-    "noAccount": "No account yet?",
-    "register": "Register"
+    "noAccount": "Doesn't have an account?",
+    "register": "Create account",
+    "forgotPassword": "Forgot your password?",
+    "imageAlt": "Interior design inspiration"
   },
   "registerPage": {
     "title": "Register",
@@ -92,6 +99,46 @@
     "creatingAccount": "Creating account...",
     "createAccount": "Create account",
     "alreadyHaveAccount": "Already have an account?",
-    "signIn": "Sign in"
+    "signIn": "Sign in",
+    "confirmPassword": "Confirm password",
+    "termsAgree": "I have read and agreed to the Terms of Service and Privacy Policy",
+    "passwordMismatch": "Passwords do not match",
+    "termsRequired": "Please accept the terms to continue",
+    "imageAlt": "Sign up inspiration"
+  },
+  "footer": {
+    "partner1": "Partner",
+    "partner2": "Partner",
+    "partner3": "Partner",
+    "partner4": "Partner",
+    "newsletterTitle": "Subscribe to your newsletter to stay updated about discounts",
+    "emailPlaceholder": "Your email address",
+    "subscribe": "Subscribe",
+    "colProducts": "Products",
+    "colCategories": "Categories",
+    "colResources": "Resources",
+    "colCompany": "Company",
+    "colSupport": "Support",
+    "linkSofas": "Sofas & seating",
+    "linkTables": "Tables",
+    "linkChairs": "Chairs",
+    "linkBeds": "Beds",
+    "linkLiving": "Living room",
+    "linkBedroom": "Bedroom",
+    "linkKitchen": "Kitchen",
+    "linkOffice": "Office",
+    "linkBlog": "Blog",
+    "linkGuides": "Style guides",
+    "linkFaq": "FAQ",
+    "linkCare": "Product care",
+    "linkAbout": "About us",
+    "linkCareers": "Careers",
+    "linkPress": "Press",
+    "linkContact": "Contact",
+    "linkShipping": "Shipping",
+    "linkReturns": "Returns",
+    "linkPrivacy": "Privacy policy",
+    "linkTerms": "Terms of use",
+    "copyright": "© 2026 Black Shop. All rights reserved."
   }
 }

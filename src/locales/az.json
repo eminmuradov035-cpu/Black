@@ -10,7 +10,8 @@
     "login": "Giriş",
     "loadingAccount": "Hesab yüklənir",
     "shoppingCart": "Səbət",
-    "language": "Dil"
+    "language": "Dil",
+    "accountMenu": "Hesab menyusu"
   },
   "categories": {
     "smartphones": "Smartfonlar",
@@ -29,7 +30,11 @@
     "loadFailed": "Məhsullar yüklənmədi",
     "loadMoreFailed": "Daha çox məhsul yüklənmədi",
     "noProducts": "Məhsul tapılmadı.",
-    "loadMore": "Daha çox"
+    "loadMore": "Daha çox",
+    "heroAlt": "Ana səhifə vitrin şəkli",
+    "heroTitle": "Rahatlıq yaradırıq, məkanları yenidən təyin edirik — eviniz, sizin imzanız.",
+    "heroSubtitle": "Hər otağı sakit, şəxsi bir sığınacağa çevirən seçilmiş mebel və dekorları kəşf edin. Kolleksiyamıza baxın və özünüzə uyğun parçalar tapın.",
+    "heroSearchPlaceholder": "Mebel, otaq və ideyalar axtarın…"
   },
   "productDetails": {
     "productNotFound": "Məhsul tapılmadı.",
@@ -78,7 +83,9 @@
     "signingIn": "Daxil olunur...",
     "signIn": "Daxil ol",
     "noAccount": "Hesabınız yoxdur?",
-    "register": "Qeydiyyat"
+    "register": "Hesab yarat",
+    "forgotPassword": "Şifrəni unutmusunuz?",
+    "imageAlt": "Daxili dizayn ilhamı"
   },
   "registerPage": {
     "title": "Qeydiyyat",
@@ -92,6 +99,46 @@
     "creatingAccount": "Hesab yaradılır...",
     "createAccount": "Hesab yarat",
     "alreadyHaveAccount": "Artıq hesabınız var?",
-    "signIn": "Daxil ol"
+    "signIn": "Daxil ol",
+    "confirmPassword": "Şifrəni təsdiqlə",
+    "termsAgree": "Xidmət Şərtləri və Məxfilik Siyasəti ilə razıyam",
+    "passwordMismatch": "Şifrələr uyğun gəlmir",
+    "termsRequired": "Davam etmək üçün şərtləri qəbul edin",
+    "imageAlt": "Qeydiyyat ilhamı"
+  },
+  "footer": {
+    "partner1": "Tərəfdaş",
+    "partner2": "Tərəfdaş",
+    "partner3": "Tərəfdaş",
+    "partner4": "Tərəfdaş",
+    "newsletterTitle": "Endirimlər haqqında xəbərdar olmaq üçün bülletenə abunə olun",
+    "emailPlaceholder": "E-poçt ünvanınız",
+    "subscribe": "Abunə ol",
+    "colProducts": "Məhsullar",
+    "colCategories": "Kateqoriyalar",
+    "colResources": "Resurslar",
+    "colCompany": "Şirkət",
+    "colSupport": "Dəstək",
+    "linkSofas": "Divanlar və oturacaqlar",
+    "linkTables": "Masalar",
+    "linkChairs": "Stullar",
+    "linkBeds": "Çarpayılar",
+    "linkLiving": "Qonaq otağı",
+    "linkBedroom": "Yataq otağı",
+    "linkKitchen": "Mətbəx",
+    "linkOffice": "Ofis",
+    "linkBlog": "Bloq",
+    "linkGuides": "Bələdçilər",
+    "linkFaq": "FAQ",
+    "linkCare": "Qulluq",
+    "linkAbout": "Haqqımızda",
+    "linkCareers": "Karyera",
+    "linkPress": "Mətbuat",
+    "linkContact": "Əlaqə",
+    "linkShipping": "Çatdırılma",
+    "linkReturns": "Qaytarılma",
+    "linkPrivacy": "Məxfilik",
+    "linkTerms": "Şərtlər",
+    "copyright": "© 2026 Black Shop. Bütün hüquqlar qorunur."
   }
 }

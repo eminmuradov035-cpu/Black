@@ -10,7 +10,8 @@
     "login": "Anmelden",
     "loadingAccount": "Konto wird geladen",
     "shoppingCart": "Warenkorb",
-    "language": "Sprache"
+    "language": "Sprache",
+    "accountMenu": "Kontomenü"
   },
   "categories": {
     "smartphones": "Smartphones",
@@ -29,7 +30,11 @@
     "loadFailed": "Produkte konnten nicht geladen werden",
     "loadMoreFailed": "Weitere Produkte konnten nicht geladen werden",
     "noProducts": "Keine Produkte gefunden.",
-    "loadMore": "Mehr laden"
+    "loadMore": "Mehr laden",
+    "heroAlt": "Startseiten-Mockup",
+    "heroTitle": "Komfort gestalten, Räume neu definieren — Ihr Zuhause, Ihr unverwechselbarer Stil.",
+    "heroSubtitle": "Entdecken Sie kuratierte Möbel und Deko, die jeden Raum in eine ruhige, persönliche Oase verwandeln. Stöbern Sie in unserer Kollektion und finden Sie Stücke, die zu Ihnen passen.",
+    "heroSearchPlaceholder": "Möbel, Räume und Ideen suchen…"
   },
   "productDetails": {
     "productNotFound": "Produkt nicht gefunden.",
@@ -78,7 +83,9 @@
     "signingIn": "Anmeldung läuft...",
     "signIn": "Anmelden",
     "noAccount": "Noch kein Konto?",
-    "register": "Registrieren"
+    "register": "Konto erstellen",
+    "forgotPassword": "Passwort vergessen?",
+    "imageAlt": "Inspiration für Innenräume"
   },
   "registerPage": {
     "title": "Registrierung",
@@ -92,6 +99,46 @@
     "creatingAccount": "Konto wird erstellt...",
     "createAccount": "Konto erstellen",
     "alreadyHaveAccount": "Hast du bereits ein Konto?",
-    "signIn": "Anmelden"
+    "signIn": "Anmelden",
+    "confirmPassword": "Passwort bestätigen",
+    "termsAgree": "Ich habe die Nutzungsbedingungen und Datenschutzrichtlinie gelesen und akzeptiere sie",
+    "passwordMismatch": "Passwörter stimmen nicht überein",
+    "termsRequired": "Bitte akzeptiere die Bedingungen",
+    "imageAlt": "Registrierung — Inspiration"
+  },
+  "footer": {
+    "partner1": "Partner",
+    "partner2": "Partner",
+    "partner3": "Partner",
+    "partner4": "Partner",
+    "newsletterTitle": "Abonniere den Newsletter und verpasse keine Rabatte",
+    "emailPlaceholder": "Deine E-Mail-Adresse",
+    "subscribe": "Abonnieren",
+    "colProducts": "Produkte",
+    "colCategories": "Kategorien",
+    "colResources": "Ressourcen",
+    "colCompany": "Unternehmen",
+    "colSupport": "Support",
+    "linkSofas": "Sofas & Sitzmöbel",
+    "linkTables": "Tische",
+    "linkChairs": "Stühle",
+    "linkBeds": "Betten",
+    "linkLiving": "Wohnzimmer",
+    "linkBedroom": "Schlafzimmer",
+    "linkKitchen": "Küche",
+    "linkOffice": "Büro",
+    "linkBlog": "Blog",
+    "linkGuides": "Ratgeber",
+    "linkFaq": "FAQ",
+    "linkCare": "Pflege",
+    "linkAbout": "Über uns",
+    "linkCareers": "Karriere",
+    "linkPress": "Presse",
+    "linkContact": "Kontakt",
+    "linkShipping": "Versand",
+    "linkReturns": "Rückgabe",
+    "linkPrivacy": "Datenschutz",
+    "linkTerms": "AGB",
+    "copyright": "© 2026 Black Shop. Alle Rechte vorbehalten."
   }
 }

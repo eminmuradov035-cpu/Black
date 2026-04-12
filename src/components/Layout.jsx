@@ -4,6 +4,7 @@ import { useCart } from "../context/CartContext";
 import { useAuth } from "../context/AuthContext";
 import { useTheme } from "../context/ThemeContext";
 import { LogoMark, IconUser, IconBag } from "./Icons";
+import Footer from "./Footer";
 
 const navLinkClass = ({ isActive }) =>
   `text-sm font-medium no-underline transition-colors ${
@@ -112,14 +113,22 @@ const Layout = () => {
                 </button>
               </div>
             ) : (
-              <Link
-                to="/login"
-                className="p-1 text-gray-700 hover:text-gray-900 rounded-full hover:bg-gray-50 no-underline dark:text-gray-200 dark:hover:text-white dark:hover:bg-gray-800"
-                aria-label={isLoading ? t("layout.loadingAccount") : t("layout.login")}
-                title={isLoading ? "Loading..." : t("layout.login")}
-              >
-                <IconUser />
-              </Link>
+              <div className="flex items-center gap-1 sm:gap-2">
+                <Link
+                  to="/login"
+                  className="p-1 text-gray-700 hover:text-gray-900 rounded-full hover:bg-gray-50 no-underline dark:text-gray-200 dark:hover:text-white dark:hover:bg-gray-800"
+                  aria-label={t("layout.login")}
+                  title={t("layout.login")}
+                >
+                  <IconUser />
+                </Link>
+                <Link
+                  to="/register"
+                  className="text-xs sm:text-sm font-medium text-gray-600 hover:text-gray-900 dark:text-gray-300 dark:hover:text-white no-underline px-2 py-1 rounded-md hover:bg-gray-50 dark:hover:bg-gray-800 transition-all duration-700 ease-in-out whitespace-nowrap"
+                >
+                  {t("loginPage.register")}
+                </Link>
+              </div>
             )}
             <Link
               to="/cart"
@@ -139,6 +148,7 @@ const Layout = () => {
       <main className="flex-1">
         <Outlet />
       </main>
+      <Footer />
     </div>
   );
 };
